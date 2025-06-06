@@ -13,7 +13,7 @@ void gestorDeProcesos()
         cout << "3. Eliminar proceso" << '\n';
         cout << "4. Modificar prioridad" << '\n';
         cout << "5. Salir" << '\n';
-        cout << "Seleccione una opci?n: "; cin >> op;
+        cout << "Seleccione una opcion: "; cin >> op;
         switch (op) 
 		{
             case 1: insertarProceso(); break;
@@ -21,7 +21,7 @@ void gestorDeProcesos()
             case 3: eliminarProceso(); break;
             case 4: modificarPrioridad(); break;
             case 5: cout << "Saliendo del Gestor de Procesos..." << '\n'; break;
-            default: cout << "Opci?n inv?lida." << '\n';
+            default: cout << "Opcion invalida." << '\n';
         }
     } while (op != 5);
 }
@@ -35,13 +35,13 @@ void gestorDeMemoria()
         cout << "2. Liberar bloque de memoria" << '\n';
         cout << "3. Ver estado de la memoria" << '\n';
         cout << "4. Salir" << '\n';
-        cout << "Seleccione una opci?n: "; cin >> op;
+        cout << "Seleccione una opcion: "; cin >> op;
         switch (op) {
             case 1: asignarBloqueMemoria(); break;
             case 2: liberarBloqueMemoria(); break;
             case 3: estadoMemoria(); break;
             case 4: cout << "Saliendo del Gestor de Memoria..." << '\n'; break;
-            default: cout << "Opci?n inv?lida." << '\n';
+            default: cout << "Opcion invalida." << '\n';
         }
     } while (op != 4);
 }
@@ -55,7 +55,7 @@ void planificadorCPU()
         cout << "2. Ejecutar proceso" << '\n';
         cout << "3. Mostrar cola de procesos" << '\n';
         cout << "4. Salir" << '\n';
-        cout << "Seleccione una opci?n: "; cin >> op;
+        cout << "Seleccione una opcion: "; cin >> op;
         switch (op) 
 		{
             case 1: {
@@ -68,7 +68,7 @@ void planificadorCPU()
             case 2: ejecutarProceso(); break;
             case 3: mostrarColaPrioritaria(); break;
             case 4: cout << "Saliendo del Planificador de CPU..." << '\n'; break;
-            default: cout << "Opci?n inv?lida." << "\n";
+            default: cout << "Opcion invalida." << "\n";
         }
     } while (op != 4);
 }
@@ -83,14 +83,14 @@ int main()
         cout << "2. Gestor de Memoria" << '\n';
         cout << "3. Planificador de CPU" << '\n';
         cout << "4. Salir" << '\n';
-        cout << "Seleccione una opci?n: "; cin >> opcion;
+        cout << "Seleccione una opcion: "; cin >> opcion;
         switch (opcion) 
 		{
             case 1: gestorDeProcesos(); break;
             case 2: gestorDeMemoria(); break;
             case 3: planificadorCPU(); break;
             case 4: cout << "Saliendo del sistema..." << '\n'; break;
-            default: cout << "Opci?n inv?lida." << '\n';
+            default: cout << "Opcion invalida." << '\n';
         }
     } while (opcion != 4);
     return 0;
